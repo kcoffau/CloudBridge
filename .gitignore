@@ -1,0 +1,70 @@
+# Binaries
+/cloudbridge
+/cloudbridge-web
+/*.exe
+/*.test
+
+# Build output
+/dist
+/build
+/out
+
+# Dependencies
+vendor/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage.out
+coverage.html
+
+# Test artifacts
+testdata/output/
+*.prof
+
+# Secrets (never commit)
+*.key
+*.pem
+*.crt
+secrets/
+vault/
+
+# rclone/icloudpd cache
+/rclone-cache/
+/icloudpd-cache/
+
+# Temporary files
+/tmp/
+/temp/
+*.tmp
+
+# Embedded assets (generated)
+/web/dist/
+/internal/assets/embedded.go
