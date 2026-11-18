@@ -1,0 +1,27 @@
+# Global owners (review all PRs)
+* @engineering-manager
+
+# Test Manager owns test infrastructure
+/tests/ @test-manager
+/.github/workflows/ @test-manager
+
+# Security Manager owns auth, secrets, network, config
+/pkg/auth/ @security-manager
+/internal/auth/ @security-manager
+/pkg/config/ @security-manager
+/internal/config/ @security-manager
+
+# Sync engine requires both Test and Security review
+/pkg/sync/ @test-manager @security-manager
+/internal/sync/ @test-manager @security-manager
+
+# Database requires Security review
+/pkg/db/ @security-manager
+/internal/db/ @security-manager
+
+# API requires Test review
+/pkg/api/ @test-manager
+/internal/api/ @test-manager
+
+# Packaging requires Test review
+/packaging/ @test-manager
